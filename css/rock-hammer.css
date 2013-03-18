@@ -1413,7 +1413,7 @@ select[size] {
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-  outline: thin dotted #333;
+  outline: thin dotted #333333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px; }
 
@@ -2051,7 +2051,7 @@ nav[role=navigation].active {
     widows: 3; }
 
   pre, blockquote {
-    border: 1px solid #666;
+    border: 1px solid #666666;
     page-break-inside: avoid; }
 
   abbr[title]:after {
@@ -2134,10 +2134,10 @@ nav[role=navigation].active {
 
   /*hero-unit*/
   .c {
-    padding: 1em .5em 0; }
+    padding: 1em 0.5em 0; }
 
   .c li {
-    padding: 0 .5em; }
+    padding: 0 0.5em; }
 
   .navigation-footer-anchor li {
     display: inline-block;
@@ -2162,7 +2162,7 @@ nav[role=navigation].active {
 
   #navigation-left-nav-flyout li {
     display: inline-block;
-    margin: 0 .25em; } }
+    margin: 0 0.25em; } }
 @media only screen and (min-width: 62em) {
   body:after {
     content: 'bp5';

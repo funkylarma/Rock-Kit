@@ -1,31 +1,65 @@
-<!-- @include _variables.html -->
+
+
+
+
+
+
 <!doctype html>
 
-<!-- @include _license.html -->
-<!-- @include _conditional.html -->
-
+<!-- 
+Rock Hammer by Andy Clarke
+Version: 0.1
+URL: http://stuffandnonsense.co.uk/projects/rock-hammer/
+Apache License: v2.0. http://www.apache.org/licenses/LICENSE-2.0
+--><!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
-<title><!-- $title --></title>
-<!-- @include _head-meta.html -->
+<title>Rock Kit</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
+<meta name="description" content="">
+<meta name="author" content="">
 <!-- For all browsers -->
-<!-- @stylesheet rock-hammer -->
+<!-- TODO: fix file paths @stylesheet rock-hammer -->
+<link rel='stylesheet' href='css/rock-hammer.css'>
 
 <!--[if (lt IE 9) & (!IEMobile)]>
-<!-- @javascript selectivizr-min -->
-<!-- @stylesheet lte-ie8 -->
+<!-- TODO: fix file paths @javascript selectivizr-min -->
+<script src='js/vendor/selectivizr-min.js'></script>
+<!-- TODO: @stylesheet lte-ie8 -->
+<link rel='stylesheet' href='css/lte-ie8.css'>
 <![endif]-->
 
 <!-- JavaScript -->
-<!-- @javascript modernizr-2.6.2-min -->
+<!-- TODO: fix file paths @javascript modernizr-2.6.2-min -->
+<script src='js/vendor/modernizr-2.6.2-min.js'></script>
 
-<!-- @include _head-icons.html -->
-<!-- @include _head-ios.html -->
-<!-- @include _head-ios-startup.html -->
-<!-- @include _head-windows.html -->
-</head>
+<!-- TODO: fix file paths -->
+<link rel="shortcut icon" href="img/favicon.ico">
+<link rel="shortcut icon" href="img/favicon.png">
+<!-- <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png"> -->
+<!-- <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png"> -->
+<!-- <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png"> -->
+<!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png"> --><!--iOS -->
+<!-- <meta name="apple-mobile-web-app-title" content="Rock Hammer"> -->
+<!-- <meta name="viewport" content="initial-scale=1.0"> (Use if apple-mobile-web-app-capable below is set to yes) -->
+<!-- <meta name="apple-mobile-web-app-capable" content="yes"> -->
+<!-- <meta name="apple-mobile-web-app-status-bar-style" content="black"> --><!-- Startup images -->
+<!-- TODO: fix file paths -->
+<!-- <link rel="apple-touch-startup-image" href="img/startup-320x460.png" media="screen and (max-device-width:320px)"> -->
+<!-- <link rel="apple-touch-startup-image" href="img/startup-640x920.png" media="(max-device-width:480px) and (-webkit-min-device-pixel-ratio:2)"> -->
+<!-- <link rel="apple-touch-startup-image" href="img/startup-640x1096.png" media="(max-device-width:548px) and (-webkit-min-device-pixel-ratio:2)"> -->
+<!-- <link rel="apple-touch-startup-image" sizes="1024x748" href="img/startup-1024x748.png" media="screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:landscape)"> -->
+<!-- <link rel="apple-touch-startup-image" sizes="768x1004" href="img/startup-768x1004.png" media="screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait)"> --><!-- Windows 8 / RT -->
+<meta name="msapplication-TileImage" content="">
+<meta name="msapplication-TileColor" content="#000"></head>
 
-<body class="samples" id="<!-- $id -->">
+<body class="samples" id="rock-kit">
 
 <a href="#navigation-toggle" class="navigation-toggle">Menu</a>
 <nav id="navigation-toggle" role="navigation">
@@ -46,8 +80,12 @@
 <section class="l-panel l-introduction">
 
 <div class="hero-unit">
-<h1><!-- $title --></h1>
-<p>A curated project library for <a href="http://hammerformac.com">Hammer For Mac</a>. Rock Hammer contains baseline typography, plus styling for common HTML elements including images, forms and tables, as well as navigation, responsive modules and widgets</p>
+<h1>Rock Kit</h1>
+<p>
+  A port of Malarkey's Rock-Hammer project. Although Hammer For Mac appears to have much better support for file paths and the build process is better for site creation.
+</p>
+<p>
+  A curated project library for <a href="http://hammerformac.com">Hammer For Mac</a>. Rock Hammer contains baseline typography, plus styling for common HTML elements including images, forms and tables, as well as navigation, responsive modules and widgets</p>
 <p class="secondary"><a href="https://github.com/malarkey/rock-hammer/zipball/master" class="btn btn-large">Download the complete Rock Hammer</a></p>
 <ul class="secondary inline">
 <li><a href="https://github.com/malarkey/Rock-Hammer">Rock Hammer on Github</a></li>
@@ -68,7 +106,7 @@
 
 <div class="l-content">
 <p>Rock Hammer&#8217;s baseline typography defaults including headings, block and text-level text elements and all types of lists.</p>
-<p><a href="#<!-- $id -->" title="Go to top">Top</a></p>
+<p><a href="#rock-kit" title="Go to top">Top</a></p>
 </div><!-- l-content -->
 </div><!-- l-wrap -->
 </div><!-- l-trigger -->
@@ -82,7 +120,7 @@
 
 <div class="l-summary">
 <p>First-level headings are marked up using <code>&#8249;h1&#8250;</code> tags.</p>
-<p class="secondary"><b>Typeface:</b> <!-- $basefont --></p>
+<p class="secondary"><b>Typeface:</b> Palatino</p>
 </div><!-- l-summary -->
 
 <div class="l-content">
@@ -96,7 +134,7 @@
 <div class="l-wrap">
 <div class="l-summary">
 <p>Second-level headings are marked up using <code>&#8249;h2&#8250;</code> tags.</p>
-<p class="secondary"><b>Typeface:</b> <!-- $basefont --></p>
+<p class="secondary"><b>Typeface:</b> Palatino</p>
 </div><!-- l-summary -->
 
 <div class="l-content">
@@ -111,7 +149,7 @@
 <div class="l-wrap">
 <div class="l-summary">
 <p>Third-level headings are marked up using <code>&#8249;h3&#8250;</code> tags.</p>
-<p class="secondary"><b>Typeface:</b> <!-- $basefont --></p>
+<p class="secondary"><b>Typeface:</b> Palatino</p>
 </div><!-- l-summary -->
 
 <div class="l-content">
@@ -126,7 +164,7 @@
 <div class="l-wrap">
 <div class="l-summary">
 <p>Fourth, fifth and sixth level headings are marked up using <code>&#8249;h4&#8250; &#8249;h5&#8250; &#8249;h6&#8250;</code> tags.</p>
-<p class="secondary"><b>Typeface:</b> <!-- $basefont --></p>
+<p class="secondary"><b>Typeface:</b> Palatino</p>
 </div><!-- l-summary -->
 
 <div class="l-content">
@@ -148,7 +186,7 @@
 </div><!-- l-summary -->
 
 <div class="l-content">
-<p><!-- $example-short --></p>
+<p>A geologist&#8217;s hammer, rock hammer, rock pick or geological pick is a hammer used for splitting and breaking rocks. </p>
 </div><!-- l-content -->
 </div><!-- l-wrap -->
 
@@ -161,7 +199,7 @@
 </div><!-- l-summary -->
 
 <div class="l-content">
-<p class="lead"><!-- $example-long --></p>
+<p class="lead">A geologist&#8217;s hammer, rock hammer, rock pick or geological pick is a hammer used for splitting and breaking rocks. In field geology, they are used to obtain a fresh surface of a rock in order to determine its composition, nature, mineralogy, history and field estimate of rock strength. In fossil collecting and mineral collecting, they are employed to break rocks with the aim of revealing fossils inside. Geologists&#8217; hammers are also sometimes used for scale in a photograph. </p>
 </div><!-- l-content -->
 </div><!-- l-wrap -->
 
@@ -175,7 +213,7 @@
 </div><!-- l-summary -->
 
 <div class="l-content">
-<p class="secondary"><!-- $example-long --></p>
+<p class="secondary">A geologist&#8217;s hammer, rock hammer, rock pick or geological pick is a hammer used for splitting and breaking rocks. In field geology, they are used to obtain a fresh surface of a rock in order to determine its composition, nature, mineralogy, history and field estimate of rock strength. In fossil collecting and mineral collecting, they are employed to break rocks with the aim of revealing fossils inside. Geologists&#8217; hammers are also sometimes used for scale in a photograph. </p>
 </div><!-- l-content -->
 </div><!-- l-wrap -->
 
@@ -188,7 +226,7 @@
 </div><!-- l-summary -->
 
 <div class="l-content">
-<p class="tertiary"><!-- $example-long --></p>
+<p class="tertiary">A geologist&#8217;s hammer, rock hammer, rock pick or geological pick is a hammer used for splitting and breaking rocks. In field geology, they are used to obtain a fresh surface of a rock in order to determine its composition, nature, mineralogy, history and field estimate of rock strength. In fossil collecting and mineral collecting, they are employed to break rocks with the aim of revealing fossils inside. Geologists&#8217; hammers are also sometimes used for scale in a photograph. </p>
 </div><!-- l-content -->
 </div><!-- l-wrap -->
 
@@ -203,8 +241,8 @@
 
 <div class="l-content">
 <blockquote>
-<p><!-- $example-long --></p>
-<small><cite><!-- $title --></cite></small>
+<p>A geologist&#8217;s hammer, rock hammer, rock pick or geological pick is a hammer used for splitting and breaking rocks. In field geology, they are used to obtain a fresh surface of a rock in order to determine its composition, nature, mineralogy, history and field estimate of rock strength. In fossil collecting and mineral collecting, they are employed to break rocks with the aim of revealing fossils inside. Geologists&#8217; hammers are also sometimes used for scale in a photograph. </p>
+<small><cite>Rock Kit</cite></small>
 </blockquote>
 </div><!-- l-content -->
 </div><!-- l-wrap -->
@@ -219,8 +257,8 @@
 
 <div class="l-content">
 <blockquote class="pull-right">
-<p><!-- $example-short --></p>
-<small><cite><!-- $title --></cite></small>
+<p>A geologist&#8217;s hammer, rock hammer, rock pick or geological pick is a hammer used for splitting and breaking rocks. </p>
+<small><cite>Rock Kit</cite></small>
 </blockquote>
 </div><!-- l-content -->
 </div><!-- l-wrap -->
@@ -371,7 +409,7 @@
 <div class="l-content">
 <dl>
 <dt>Rock Hammer</dt>
-<dd><!-- $example-short --></dd>
+<dd>A geologist&#8217;s hammer, rock hammer, rock pick or geological pick is a hammer used for splitting and breaking rocks. </dd>
 </dl>
 </div><!-- l-content -->
 </div><!-- l-wrap -->
@@ -387,7 +425,7 @@
 <div class="l-content">
 <dl class="dl-horizontal">
 <dt>Rock Hammer</dt>
-<dd><!-- $example-short --></dd>
+<dd>A geologist&#8217;s hammer, rock hammer, rock pick or geological pick is a hammer used for splitting and breaking rocks. </dd>
 </dl>
 </div><!-- l-content -->
 </div><!-- l-wrap -->
@@ -415,14 +453,113 @@
 
 <div class="l-content">
 <p>Colour that creates atmosphere and an interaction vocabulary. What can I press, what can&#8217;t I press, what have I pressed?</p>
-<p><a href="#<!-- $id -->" title="Go to top">Top</a></p>
+<p><a href="#rock-kit" title="Go to top">Top</a></p>
 </div><!-- l-content -->
 </div><!-- l-wrap -->
 </div><!-- l-trigger -->
 
 <div class="l-hidden collapse" id="panel-colour-hidden">
-<!-- @include _colour.html -->
+<div class="l-wrap">
+<div class="l-summary">
+<h3>Primary colour</h3>
+<p class="secondary">rgb(146,154,0)</p>
+</div><!-- l-summary -->
 
+<div class="l-content">
+<div class="swatch swatch-base">
+<div class="swatch-row swatch-row-one clearfix">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+<div class="swatch-row swatch-row-two clearfix">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+</div><!-- l-content -->
+</div><!-- l-wrap -->
+
+<!-- Next -->
+
+<div class="l-wrap">
+<div class="l-summary">
+<h3>Secondary colour</h3>
+<p class="secondary">rgb(164,50,21)</p>
+</div><!-- l-summary -->
+
+<div class="l-content">
+<div class="swatch swatch-secondary">
+<div class="swatch-row swatch-row-one clearfix">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+<div class="swatch-row swatch-row-two clearfix">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+</div><!-- l-content -->
+</div><!-- l-wrap -->
+
+<!-- Next -->
+
+<div class="l-wrap">
+<div class="l-summary">
+<h3>Tertiary colour</h3>
+<p class="secondary">rgb(41,47,54)</p>
+</div><!-- l-summary -->
+
+<div class="l-content">
+<div class="swatch swatch-tertiary">
+<div class="swatch-row swatch-row-one clearfix">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+<div class="swatch-row swatch-row-two clearfix">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+</div><!-- l-content -->
+</div><!-- l-wrap -->
+
+<!-- Next -->
+
+<div class="l-wrap">
+<div class="l-summary">
+<h3>Neutral colour</h3>
+<p class="secondary">rgb(41,47,54)</p>
+</div><!-- l-summary -->
+
+<div class="l-content">
+<div class="swatch swatch-neutral">
+<div class="swatch-row swatch-row-one clearfix">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+<div class="swatch-row swatch-row-two clearfix">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+</div><!-- l-content -->
+</div><!-- l-wrap -->
 </div><!-- l-hidden -->
 </section><!-- section -->
 
@@ -438,7 +575,7 @@
 
 <div class="l-content">
 <p>Textural treatments for images including backgrounds, borders, shapes and shadows.</p>
-<p><a href="#<!-- $id -->" title="Go to top">Top</a></p>
+<p><a href="#rock-kit" title="Go to top">Top</a></p>
 </div><!-- l-content -->
 </div><!-- l-wrap -->
 </div><!-- l-trigger -->
@@ -451,9 +588,9 @@
 </div><!-- l-summary -->
 
 <div class="l-content">
-<p><img src="<!-- @path rock-hammer-1.jpg -->" width="128" alt="" class="img-rounded">
-<img src="<!-- @path rock-hammer-2.jpg -->" width="128" alt="" class="img-circle">
-<img src="<!-- @path rock-hammer-3.jpg -->" width="128" alt="" class="img-polaroid"></p>
+<p><img src="img/tmp/rock-hammer-1.jpg" width="128" alt="" class="img-rounded">
+<img src="img/tmp/rock-hammer-2.jpg" width="128" alt="" class="img-circle">
+<img src="img/tmp/rock-hammer-3.jpg" width="128" alt="" class="img-polaroid"></p>
 </div><!-- l-content -->
 </div><!-- l-wrap -->
 
@@ -466,7 +603,7 @@
 
 <div class="l-content">
 <figure>
-<img src="<!-- @path rock-hammer-1.jpg -->" width="128" alt="" class="img-rounded">
+<img src="img/tmp/rock-hammer-1.jpg" width="128" alt="" class="img-rounded">
 <figcaption>Figure caption</figcaption>
 </figure>
 </div><!-- l-content -->
@@ -487,7 +624,7 @@
 
 <div class="l-content">
 <p>Commonly used navigation patterns including tabs and pills, breadcrumbs and pagination.</p>
-<p><a href="#<!-- $id -->" title="Go to top">Top</a></p>
+<p><a href="#rock-kit" title="Go to top">Top</a></p>
 </div><!-- l-content -->
 </div><!-- l-wrap -->
 </div><!-- l-trigger -->
@@ -501,8 +638,18 @@
 </div><!-- l-summary -->
 
 <div class="l-content">
-<!-- @include _bootstrap-navbar.html -->
-</div><!-- l-content -->
+<!-- http://twitter.github.com/bootstrap/components.html#navbar -->
+<div class="navbar">
+<div class="navbar__inner">
+<a class="navbar__brand" href="#">Rock Kit</a>
+<ul class="nav">
+<li class="active"><a href="#">One</a></li>
+<li><a href="#">Two</a></li>
+<!-- <li class="divider-vertical"></li> -->
+<li><a href="#">Three</a></li>
+</ul>
+</div>
+</div></div><!-- l-content -->
 </div><!-- l-wrap -->
 
 <!-- Next -->
@@ -516,8 +663,25 @@
 </div><!-- l-summary -->
 
 <div class="l-content">
-<!-- @include _bootstrap-tabbable.html -->
-</div><!-- l-content -->
+<!-- http://twitter.github.com/bootstrap/components.html#navs -->
+<div class="tabbable">
+<ul class="nav nav-tabs">
+<li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+<li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+</ul>
+
+<div class="tab-content">
+<div class="tab-pane fade active" id="tab1">
+<p>A geologist&#8217;s hammer, rock hammer, rock pick or geological pick is a hammer used for splitting and breaking rocks. </p>
+</div><!-- tab-pane -->
+
+<!-- Next -->
+
+<div class="tab-pane fade" id="tab2">
+<p>A geologist&#8217;s hammer, rock hammer, rock pick or geological pick is a hammer used for splitting and breaking rocks. In field geology, they are used to obtain a fresh surface of a rock in order to determine its composition, nature, mineralogy, history and field estimate of rock strength. In fossil collecting and mineral collecting, they are employed to break rocks with the aim of revealing fossils inside. Geologists&#8217; hammers are also sometimes used for scale in a photograph. </p>
+</div><!-- tab-pane -->
+</div><!-- tab-content -->
+</div><!-- tabbable --></div><!-- l-content -->
 </div><!-- l-wrap -->
 
 <!-- Next -->
@@ -529,8 +693,25 @@
 </div><!-- l-summary -->
 
 <div class="l-content">
-<!-- @include _bootstrap-tabbable-below.html -->
-</div><!-- l-content -->
+<!-- http://twitter.github.com/bootstrap/components.html#navs -->
+<div class="tabbable tabs-below">
+<ul class="nav nav-tabs">
+<li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+<li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+</ul>
+
+<div class="tab-content">
+<div class="tab-pane fade active" id="tab1">
+<p>A geologist&#8217;s hammer, rock hammer, rock pick or geological pick is a hammer used for splitting and breaking rocks. </p>
+</div><!-- tab-pane -->
+
+<!-- Next -->
+
+<div class="tab-pane fade" id="tab2">
+<p>A geologist&#8217;s hammer, rock hammer, rock pick or geological pick is a hammer used for splitting and breaking rocks. In field geology, they are used to obtain a fresh surface of a rock in order to determine its composition, nature, mineralogy, history and field estimate of rock strength. In fossil collecting and mineral collecting, they are employed to break rocks with the aim of revealing fossils inside. Geologists&#8217; hammers are also sometimes used for scale in a photograph. </p>
+</div><!-- tab-pane -->
+</div><!-- tab-content -->
+</div><!-- tabbable --></div><!-- l-content -->
 </div><!-- l-wrap -->
 
 <!-- Next -->
@@ -542,8 +723,25 @@
 </div><!-- l-summary -->
 
 <div class="l-content">
-<!-- @include _bootstrap-tabbable-left.html -->
-</div><!-- l-content -->
+<!-- http://twitter.github.com/bootstrap/components.html#navs -->
+<div class="tabbable tabs-left">
+<ul class="nav nav-tabs">
+<li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+<li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+</ul>
+
+<div class="tab-content">
+<div class="tab-pane fade active" id="tab1">
+<p>A geologist&#8217;s hammer, rock hammer, rock pick or geological pick is a hammer used for splitting and breaking rocks. </p>
+</div><!-- tab-pane -->
+
+<!-- Next -->
+
+<div class="tab-pane fade" id="tab2">
+<p>A geologist&#8217;s hammer, rock hammer, rock pick or geological pick is a hammer used for splitting and breaking rocks. In field geology, they are used to obtain a fresh surface of a rock in order to determine its composition, nature, mineralogy, history and field estimate of rock strength. In fossil collecting and mineral collecting, they are employed to break rocks with the aim of revealing fossils inside. Geologists&#8217; hammers are also sometimes used for scale in a photograph. </p>
+</div><!-- tab-pane -->
+</div><!-- tab-content -->
+</div><!-- tabbable --></div><!-- l-content -->
 </div><!-- l-wrap -->
 
 <!-- Next -->
@@ -555,8 +753,33 @@
 </div><!-- l-summary -->
 
 <div class="l-content">
-<!-- @include _bootstrap-tabbable-right.html -->
-</div><!-- l-content -->
+<!-- http://twitter.github.com/bootstrap/components.html#navs -->
+<div class="tabbable tabs-right">
+<ul class="nav nav-tabs">
+<li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+<li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+<li><a href="#tab3" data-toggle="tab">Section 3</a></li>
+</ul>
+
+<div class="tab-content">
+<div class="tab-pane fade active" id="tab1">
+<p>A geologist&#8217;s hammer, rock hammer, rock pick or geological pick is a hammer used for splitting and breaking rocks. </p>
+</div><!-- tab-pane -->
+
+<!-- Next -->
+
+<div class="tab-pane fade" id="tab2">
+<p>A geologist&#8217;s hammer, rock hammer, rock pick or geological pick is a hammer used for splitting and breaking rocks. </p>
+</div><!-- tab-pane -->
+
+<!-- Next -->
+
+<div class="tab-pane fade" id="tab3">
+<p>A geologist&#8217;s hammer, rock hammer, rock pick or geological pick is a hammer used for splitting and breaking rocks. In field geology, they are used to obtain a fresh surface of a rock in order to determine its composition, nature, mineralogy, history and field estimate of rock strength. In fossil collecting and mineral collecting, they are employed to break rocks with the aim of revealing fossils inside. Geologists&#8217; hammers are also sometimes used for scale in a photograph. </p>
+</div><!-- tab-pane -->
+
+</div><!-- tab-content -->
+</div><!-- tabbable --></div><!-- l-content -->
 </div><!-- l-wrap -->
 
 <!-- Next -->
@@ -568,8 +791,12 @@
 </div><!-- l-summary -->
 
 <div class="l-content">
-<!-- @include _bootstrap-breadcrumbs.html -->
-</div><!-- l-content -->
+<!-- http://twitter.github.com/bootstrap/components.html#breadcrumbs -->
+<ul class="breadcrumb">
+<li><a href="#">Home</a> <span class="divider">/</span></li>
+<li><a href="#">One</a> <span class="divider">/</span></li>
+<li class="active">Two</li>
+</ul></div><!-- l-content -->
 </div><!-- l-wrap -->
 
 <!-- Next -->
@@ -581,8 +808,12 @@
 </div><!-- l-summary -->
 
 <div class="l-content">
-<!-- @include _bootstrap-nav-pills.html -->
-</div><!-- l-content -->
+<!-- http://twitter.github.com/bootstrap/components.html#navs -->
+<ul class="nav nav-pills">
+<li class="disabled"><a href="#">One</a></li>
+<li class="active"><a href="#">Two</a></li>
+<li><a href="#">Three</a></li>
+</ul></div><!-- l-content -->
 </div><!-- l-wrap -->
 
 <!-- Next -->
@@ -594,8 +825,15 @@
 </div><!-- l-summary -->
 
 <div class="l-content">
-<!-- @include _bootstrap-nav-list.html -->
-</div><!-- l-content -->
+<!-- http://twitter.github.com/bootstrap/components.html#navs -->
+<ul class="nav nav-list">
+<li class="nav-header">Nav header</li>
+<li><a href="#">One</a></li>
+<li><a href="#">Two</a></li>
+<li><a href="#">Three</a></li>
+<li class="divider"></li>
+<li><a href="#">Four</a></li>
+</ul></div><!-- l-content -->
 </div><!-- l-wrap -->
 
 <!-- Next -->
@@ -607,8 +845,12 @@
 </div><!-- l-summary -->
 
 <div class="l-content">
-<!-- @include _bootstrap-nav-tabs-stacked.html -->
-</div><!-- l-content -->
+<!-- http://twitter.github.com/bootstrap/components.html#navs -->
+<ul class="nav nav-tabs nav-stacked">
+<li class="active"><a href="#">One</a></li>
+<li><a href="#">Two</a></li>
+<li><a href="#">Three</a></li>
+</ul></div><!-- l-content -->
 </div><!-- l-wrap -->
 
 <!-- Next -->
@@ -620,8 +862,12 @@
 </div><!-- l-summary -->
 
 <div class="l-content">
-<!-- @include _bootstrap-nav-pills-stacked.html -->
-</div><!-- l-content -->
+<!-- http://twitter.github.com/bootstrap/components.html#navs -->
+<ul class="nav nav-pills nav-stacked">
+<li class="active"><a href="#">One</a></li>
+<li><a href="#">Two</a></li>
+<li><a href="#">Three</a></li>
+</ul></div><!-- l-content -->
 </div><!-- l-wrap -->
 
 <!-- Next -->
@@ -633,8 +879,39 @@
 </div><!-- l-summary -->
 
 <div class="l-content">
-<!-- @include _bootstrap-pagination.html -->
-</div><!-- l-content -->
+<!-- http://twitter.github.com/bootstrap/components.html#pagination -->
+<div class="pagination">
+<ul>
+<li><a href="#">Prev</a></li>
+<li><a href="#">1</a></li>
+<li class="active"><a href="#">2</a></li>
+<li><a href="#">3</a></li>
+<li><a href="#">4</a></li>
+<li><a href="#">Next</a></li>
+</ul>
+</div>
+
+<div class="pagination">
+<ul>
+<li><a href="#" title="Previous">&#8592;</a></li>
+<li><a href="#">1</a></li>
+<li class="active"><a href="#">2</a></li>
+<li><a href="#">3</a></li>
+<li><a href="#">4</a></li>
+<li><a href="#" title="Next">&#8594;</a></li>
+</ul>
+</div>
+
+<div class="pagination">
+<ul>
+<li><a href="#" title="Previous">&#171;</a></li>
+<li><a href="#">1</a></li>
+<li class="active"><a href="#">2</a></li>
+<li><a href="#">3</a></li>
+<li><a href="#">4</a></li>
+<li><a href="#" title="Next">&#187;</a></li>
+</ul>
+</div></div><!-- l-content -->
 </div><!-- l-wrap -->
 
 <!-- Next -->
@@ -646,8 +923,39 @@
 </div><!-- l-summary -->
 
 <div class="l-content">
-<!-- @include _bootstrap-pagination-centered.html -->
-</div><!-- l-content -->
+<!-- http://twitter.github.com/bootstrap/components.html#pagination -->
+<div class="pagination pagination-centered">
+<ul>
+<li><a href="#">Prev</a></li>
+<li><a href="#">1</a></li>
+<li class="active"><a href="#">2</a></li>
+<li><a href="#">3</a></li>
+<li><a href="#">4</a></li>
+<li><a href="#">Next</a></li>
+</ul>
+</div>
+
+<div class="pagination pagination-centered">
+<ul>
+<li><a href="#" title="Previous">&#8592;</a></li>
+<li><a href="#">1</a></li>
+<li class="active"><a href="#">2</a></li>
+<li><a href="#">3</a></li>
+<li><a href="#">4</a></li>
+<li><a href="#" title="Next">&#8594;</a></li>
+</ul>
+</div>
+
+<div class="pagination pagination-centered">
+<ul>
+<li><a href="#" title="Previous">&#171;</a></li>
+<li><a href="#">1</a></li>
+<li class="active"><a href="#">2</a></li>
+<li><a href="#">3</a></li>
+<li><a href="#">4</a></li>
+<li><a href="#" title="Next">&#187;</a></li>
+</ul>
+</div></div><!-- l-content -->
 </div><!-- l-wrap -->
 
 <!-- Next -->
@@ -659,8 +967,39 @@
 </div><!-- l-summary -->
 
 <div class="l-content">
-<!-- @include _bootstrap-pagination-right.html -->
-</div><!-- l-content -->
+<!-- http://twitter.github.com/bootstrap/components.html#pagination -->
+<div class="pagination pagination-right">
+<ul>
+<li><a href="#">Prev</a></li>
+<li><a href="#">1</a></li>
+<li class="active"><a href="#">2</a></li>
+<li><a href="#">3</a></li>
+<li><a href="#">4</a></li>
+<li><a href="#">Next</a></li>
+</ul>
+</div>
+
+<div class="pagination pagination-right">
+<ul>
+<li><a href="#" title="Previous">&#8592;</a></li>
+<li><a href="#">1</a></li>
+<li class="active"><a href="#">2</a></li>
+<li><a href="#">3</a></li>
+<li><a href="#">4</a></li>
+<li><a href="#" title="Next">&#8594;</a></li>
+</ul>
+</div>
+
+<div class="pagination pagination-right">
+<ul>
+<li><a href="#" title="Previous">&#171;</a></li>
+<li><a href="#">1</a></li>
+<li class="active"><a href="#">2</a></li>
+<li><a href="#">3</a></li>
+<li><a href="#">4</a></li>
+<li><a href="#" title="Next">&#187;</a></li>
+</ul>
+</div></div><!-- l-content -->
 </div><!-- l-wrap -->
 
 <!-- Next -->
@@ -672,8 +1011,72 @@
 </div><!-- l-summary -->
 
 <div class="l-content">
-<!-- @include _bootstrap-pagination-sizes.html -->
-</div><!-- l-content -->
+<!-- http://twitter.github.com/bootstrap/components.html#pagination -->
+<div class="pagination pagination-large">
+<ul>
+<li><a href="#">Prev</a></li>
+<li><a href="#">1</a></li>
+<li class="active"><a href="#">2</a></li>
+<li><a href="#">3</a></li>
+<li><a href="#">4</a></li>
+<li><a href="#">Next</a></li>
+</ul>
+</div>
+
+<div class="pagination pagination-large">
+<ul>
+<li><a href="#" title="Previous">&#171;</a></li>
+<li><a href="#">1</a></li>
+<li class="active"><a href="#">2</a></li>
+<li><a href="#">3</a></li>
+<li><a href="#">4</a></li>
+<li><a href="#" title="Next">&#187;</a></li>
+</ul>
+</div>
+
+<div class="pagination pagination-small">
+<ul>
+<li><a href="#">Prev</a></li>
+<li><a href="#">1</a></li>
+<li class="active"><a href="#">2</a></li>
+<li><a href="#">3</a></li>
+<li><a href="#">4</a></li>
+<li><a href="#">Next</a></li>
+</ul>
+</div>
+
+<div class="pagination pagination-small">
+<ul>
+<li><a href="#" title="Previous">&#171;</a></li>
+<li><a href="#">1</a></li>
+<li class="active"><a href="#">2</a></li>
+<li><a href="#">3</a></li>
+<li><a href="#">4</a></li>
+<li><a href="#" title="Next">&#187;</a></li>
+</ul>
+</div>
+
+<div class="pagination pagination-mini">
+<ul>
+<li><a href="#">Prev</a></li>
+<li><a href="#">1</a></li>
+<li class="active"><a href="#">2</a></li>
+<li><a href="#">3</a></li>
+<li><a href="#">4</a></li>
+<li><a href="#">Next</a></li>
+</ul>
+</div>
+
+<div class="pagination pagination-mini">
+<ul>
+<li><a href="#" title="Previous">&#171;</a></li>
+<li><a href="#">1</a></li>
+<li class="active"><a href="#">2</a></li>
+<li><a href="#">3</a></li>
+<li><a href="#">4</a></li>
+<li><a href="#" title="Next">&#187;</a></li>
+</ul>
+</div></div><!-- l-content -->
 </div><!-- l-wrap -->
 
 <!-- Next -->
@@ -685,8 +1088,11 @@
 </div><!-- l-summary -->
 
 <div class="l-content">
-<!-- @include _bootstrap-pager.html -->
-</div><!-- l-content -->
+<!-- http://twitter.github.com/bootstrap/components.html -->
+<ul class="pager">
+<li><a href="#">&larr; <abbr>Prev</abbr></a></li>
+<li><a href="#">Next &rarr;</a></li>
+</ul></div><!-- l-content -->
 </div><!-- l-wrap -->
 
 </div><!-- hidden -->
@@ -705,7 +1111,7 @@
 
 <div class="l-content">
 <p>Commonly used content module patterns including hero and media units, plus textural styling of alert boxes.</p>
-<p><a href="#<!-- $id -->" title="Go to top">Top</a></p>
+<p><a href="#rock-kit" title="Go to top">Top</a></p>
 </div><!-- l-content -->
 </div><!-- l-wrap -->
 </div><!-- l-trigger -->
@@ -715,8 +1121,12 @@
 <div class="l-wrap">
 <h2>Hero unit</h2>
 <p>Hero units are marked up using <code>&#8249;div&#8250;</code> tags with an additional <code>hero-unit</code> class.</p>
-<!-- @include _bootstrap-hero.html -->
-</div><!-- l-wrap -->
+<!-- http://twitter.github.com/bootstrap/components.html#misc -->
+<div class="hero-unit">
+<h1>Rock Kit</h1>
+<p>A geologist&#8217;s hammer, rock hammer, rock pick or geological pick is a hammer used for splitting and breaking rocks. </p>
+<p><a href="#" class="btn btn-primary btn-large">Learn more</a></p>
+</div></div><!-- l-wrap -->
 
 <!-- Next -->
 
@@ -727,8 +1137,34 @@
 </div><!-- l-summary -->
 
 <div class="l-content">
-<!-- @include _bootstrap-media.html -->
-</div><!-- l-content -->
+<!-- http://twitter.github.com/bootstrap/components.html#media -->
+<div class="media">
+<a class="pull-left" href="#"><img class="media-object" width="64" src=""></a>
+<div class="media-body">
+<h4 class="media-heading">Rock Kit</h4>
+<p>A geologist&#8217;s hammer, rock hammer, rock pick or geological pick is a hammer used for splitting and breaking rocks. </p>
+</div><!-- media-body -->
+</div><!-- media -->
+
+<!-- Next -->
+
+<div class="media">
+<a class="pull-right" href="#"><img class="media-object" width="64" src=""></a>
+<div class="media-body">
+<h4 class="media-heading">Rock Kit</h4>
+<p>A geologist&#8217;s hammer, rock hammer, rock pick or geological pick is a hammer used for splitting and breaking rocks. </p>
+</div><!-- media-body -->
+</div><!-- media -->
+
+<!-- Next -->
+
+<div class="media">
+<a class="pull-left" href="#"><img class="media-object" width="64" src=""></a>
+<div class="media-body">
+<h4 class="media-heading">Rock Kit</h4>
+<p>A geologist&#8217;s hammer, rock hammer, rock pick or geological pick is a hammer used for splitting and breaking rocks. </p>
+</div><!-- media-body -->
+</div><!-- media --></div><!-- l-content -->
 </div><!-- l-wrap -->
 
 <!-- Next -->
@@ -741,8 +1177,24 @@
 </div><!-- l-summary -->
 
 <div class="l-content">
-<!-- @include _bootstrap-alerts.html -->
-</div><!-- l-content -->
+<!-- http://twitter.github.com/bootstrap/components.html#alerts -->
+<div class="alert">
+<strong>Rock Kit</strong> A geologist&#8217;s hammer, rock hammer, rock pick or geological pick is a hammer used for splitting and breaking rocks. </div>
+
+<!-- Next -->
+
+<div class="alert alert--error">
+<strong>Rock Kit</strong> A geologist&#8217;s hammer, rock hammer, rock pick or geological pick is a hammer used for splitting and breaking rocks. </div>
+
+<!-- Next -->
+
+<div class="alert alert--info">
+<strong>Rock Kit</strong> A geologist&#8217;s hammer, rock hammer, rock pick or geological pick is a hammer used for splitting and breaking rocks. </div>
+
+<!-- Next -->
+
+<div class="alert alert--success">
+<strong>Rock Kit</strong> A geologist&#8217;s hammer, rock hammer, rock pick or geological pick is a hammer used for splitting and breaking rocks. </div></div><!-- l-content -->
 </div><!-- l-wrap -->
 
 <!-- Next -->
@@ -754,8 +1206,10 @@
 </div><!-- l-summary -->
 
 <div class="l-content">
-<!-- @include _bootstrap-wells.html -->
-</div><!-- l-content -->
+<!-- http://twitter.github.com/bootstrap/components.html#media -->
+<div class="well">
+<p>A geologist&#8217;s hammer, rock hammer, rock pick or geological pick is a hammer used for splitting and breaking rocks. </p>
+</div></div><!-- l-content -->
 </div><!-- l-wrap -->
 
 <!-- Next -->
@@ -804,7 +1258,7 @@
 
 <div class="l-content">
 <p>Multiple form layout configurations and styling for form inputs and button shapes.</p>
-<p><a href="#<!-- $id -->" title="Go to top">Top</a></p>
+<p><a href="#rock-kit" title="Go to top">Top</a></p>
 </div><!-- l-content -->
 </div><!-- l-wrap -->
 </div><!-- l-trigger -->
@@ -817,8 +1271,21 @@
 </div><!-- l-summary -->
 
 <div class="l-content">
-<!-- @include _bootstrap-form-standard -->
-</div><!-- l-content -->
+<!-- http://twitter.github.com/bootstrap/base-css.html#forms -->
+<form>
+<fieldset>
+<legend>Rock Kit</legend>
+<label>Your name</label>
+<input type="text" placeholder="eg: Andrew Doyle">
+<span class="help-block">A geologist&#8217;s hammer, rock hammer, rock pick or geological pick is a hammer used for splitting and breaking rocks. </span>
+</fieldset>
+
+<fieldset>
+<label class="checkbox">
+<input type="checkbox"> I agree to terms and conditions</label>
+<button class="btn">Submit</button>
+</fieldset>
+</form></div><!-- l-content -->
 </div><!-- l-wrap -->
 
 <!-- Next -->
@@ -830,8 +1297,11 @@
 </div><!-- l-summary -->
 
 <div class="l-content">
-<!-- @include _bootstrap-form-search -->
-</div><!-- l-content -->
+<!-- http://twitter.github.com/bootstrap/base-css.html#forms -->
+<form class="form-search">
+<input type="text" class="input-medium search-query">
+<button class="btn">Search</button>
+</form></div><!-- l-content -->
 </div><!-- l-wrap -->
 
 <!-- Next -->
@@ -843,8 +1313,13 @@
 </div><!-- l-summary -->
 
 <div class="l-content">
-<!-- @include _bootstrap-form-inline.html -->
-</div><!-- l-content -->
+<!-- http://twitter.github.com/bootstrap/base-css.html#forms -->
+<form class="form-inline">
+<input type="text" class="input-medium">
+<input type="password" class="input-medium">
+<label class="checkbox"><input type="checkbox"> I agree to terms and conditions</label>
+<button class="btn">Submit</button>
+</form></div><!-- l-content -->
 </div><!-- l-wrap -->
 
 <!-- Next -->
@@ -856,8 +1331,37 @@
 </div><!-- l-summary -->
 
 <div class="l-content">
-<!-- @include _bootstrap-form-horizontal.html -->
-</div><!-- l-content -->
+<!-- http://twitter.github.com/bootstrap/base-css.html#forms -->
+<form class="form-horizontal">
+
+<div class="control-group">
+<label class="control-label" for="email">Email</label>
+<div class="controls">
+<input type="text" id="email" name="email">
+</div><!-- controls -->
+</div><!-- control-group -->
+
+
+<div class="control-group">
+<label class="control-label" for="password">Password</label>
+<div class="controls">
+<input type="password" id="password" name="password">
+</div><!-- controls -->
+</div><!-- control-group -->
+
+<div class="control-group">
+<div class="controls">
+<label class="checkbox"><input type="checkbox"> Remember me</label>
+</div><!-- controls -->
+</div><!-- control-group -->
+
+<div class="control-group">
+<div class="controls">
+<button class="btn">Submit</button>
+</div><!-- controls -->
+</div><!-- control-group -->
+
+</form><!-- form-horizontal --></div><!-- l-content -->
 </div><!-- l-wrap -->
 
 <!-- Next -->
@@ -1053,7 +1557,7 @@ Radio option</label></p>
 
 <div class="l-content">
 <p>Multiple tabular data table configurations and styling, including bordered, condensed and striped styles.</p>
-<p><a href="#<!-- $id -->" title="Go to top">Top</a></p>
+<p><a href="#rock-kit" title="Go to top">Top</a></p>
 </div><!-- l-content -->
 </div><!-- l-wrap -->
 </div><!-- l-trigger -->
@@ -1297,7 +1801,7 @@ Radio option</label></p>
 
 <div class="l-content">
 <p>Commonly used dynamic content modules including a vertical collapsing accordion and horizontal scrolling carousel.</p>
-<p><a href="#<!-- $id -->" title="Go to top">Top</a></p>
+<p><a href="#rock-kit" title="Go to top">Top</a></p>
 </div><!-- l-content -->
 </div><!-- l-wrap -->
 </div><!-- l-trigger -->
@@ -1310,8 +1814,54 @@ Radio option</label></p>
 </div><!-- l-summary -->
 
 <div class="l-content">
-<!-- @include _bootstrap-accordion.html -->
-</div><!-- l-content -->
+<div class="accordion" id="accordion">
+
+<div class="accordion__group">
+<div class="accordion__heading">
+<a class="accordion__toggle" data-toggle="collapse" data-parent="#accordion" href="#accordion__collapse__01">
+Rock Kit</a>
+</div><!-- accordion-heading -->
+
+<div id="accordion__collapse__01" class="accordion__body collapse in">
+<div class="accordion__inner">
+<p>A geologist&#8217;s hammer, rock hammer, rock pick or geological pick is a hammer used for splitting and breaking rocks. </p>
+</div><!-- accordion-inner -->
+</div><!-- accordion-body -->
+</div><!-- accordion-group -->
+
+<!-- Next -->
+
+<div class="accordion__group">
+<div class="accordion__heading">
+<a class="accordion__toggle" data-toggle="collapse" data-parent="#accordion" href="#accordion__collapse__02">
+Rock Kit</a>
+</div>
+
+<div id="accordion__collapse__02" class="accordion__body collapse">
+<div class="accordion__inner">
+<p>A geologist&#8217;s hammer, rock hammer, rock pick or geological pick is a hammer used for splitting and breaking rocks. </p>
+</div><!-- accordion-inner -->
+</div><!-- accordion-body -->
+</div><!-- accordion-group -->
+
+<!-- Next -->
+
+<div class="accordion__group">
+<div class="accordion__heading">
+<a class="accordion__toggle" data-toggle="collapse" data-parent="#accordion" href="#accordion__collapse__03">
+Rock Kit</a>
+</div>
+
+<div id="accordion__collapse__03" class="accordion__body collapse">
+<div class="accordion__inner">
+<p>A geologist&#8217;s hammer, rock hammer, rock pick or geological pick is a hammer used for splitting and breaking rocks. </p>
+</div><!-- accordion-inner -->
+</div><!-- accordion-body -->
+</div><!-- accordion-group -->
+
+<!-- Last -->
+
+</div><!-- accordion --></div><!-- l-content -->
 </div><!-- l-wrap -->
 
 <!-- Next -->
@@ -1322,8 +1872,36 @@ Radio option</label></p>
 </div><!-- l-summary -->
 
 <div class="l-content">
-<!-- @include _bootstrap-carousel.html -->
-</div><!-- l-content -->
+<!-- http://twitter.github.com/bootstrap/javascript.html#carousel -->
+<div id="myCarousel" class="carousel slide">
+<div class="carousel-inner">
+<div class="item active">
+<img src="img/tmp/rock-hammer-1.jpg" alt="" />
+<div class="carousel-caption">
+<h4>Rock Kit</h4>
+<p class="secondary">A geologist&#8217;s hammer, rock hammer, rock pick or geological pick is a hammer used for splitting and breaking rocks. </p>
+</div>
+</div>
+
+<div class="item">
+<img src="img/tmp/rock-hammer-2.jpg" alt="" />
+<div class="carousel-caption">
+<h4>Rock Kit</h4>
+<p class="secondary">A geologist&#8217;s hammer, rock hammer, rock pick or geological pick is a hammer used for splitting and breaking rocks. In field geology, they are used to obtain a fresh surface of a rock in order to determine its composition, nature, mineralogy, history and field estimate of rock strength. In fossil collecting and mineral collecting, they are employed to break rocks with the aim of revealing fossils inside. Geologists&#8217; hammers are also sometimes used for scale in a photograph. </p>
+</div>
+</div>
+
+<div class="item">
+<img src="img/tmp/rock-hammer-3.jpg" alt="" />
+<div class="carousel-caption">
+<h4>Rock Kit</h4>
+<p class="secondary">A geologist&#8217;s hammer, rock hammer, rock pick or geological pick is a hammer used for splitting and breaking rocks. </p>
+</div>
+</div>
+</div>
+<a class="carousel-control left" href="#myCarousel" data-slide="prev" title="Prev">&#171;</a>
+<a class="carousel-control right" href="#myCarousel" data-slide="next" title="Next">&#187;</a>
+</div></div><!-- l-content -->
 </div><!-- l-wrap -->
 
 </div><!-- hidden -->
@@ -1332,12 +1910,23 @@ Radio option</label></p>
 
 <!-- Final ============================== -->
 
-<!-- @include _contentinfo.html -->
-</div><!-- container -->
+<footer role="contentinfo" class="donthatetimvandamme">
+<small>Rock Kit v0.1 by <a href="http://stuffandnonsense.co.uk">Stuff and Nonsense</a>.</small> 
+<small>Licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</small>
+<small>Thanks to:
+<a href="http://twitter.com/aaronallport">Aaron Allport</a>, 
+<a href="https://twitter.com/chriscoyier">Chris Coyier</a>
+<a href="http://twitter.com/brad_frost">Brad Frost</a> and 
+<a href="http://twitter.com/twbootstrap">Bootstrap</a>.
+</small>
+</footer></div><!-- container -->
 
-<!-- @include _scripts.html -->
-
-<!-- Remove if unused --> <!-- @javascript nav-toggle -->
-<!-- Remove if unused --> <!-- @javascript left-nav-flyout -->
+<!-- TODO: fix file paths -->
+<script src='js/vendor/jquery-1.8.3-min.js'></script>
+<script src='js/vendor/jquery/jquery.scrollTo.min.js'></script>
+<script src='js/vendor/bootstrap-min.js'></script>
+<script src='js/main.js'></script>
+<!-- Remove if unused --> <script src='js/nav-patterns/nav-toggle.js'></script>
+<!-- Remove if unused --> <script src='js/nav-patterns/left-nav-flyout.js'></script>
 </body>
 </html>

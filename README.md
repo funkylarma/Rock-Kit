@@ -1,4 +1,6 @@
-# [Rock Hammer](http://stuffandnonsense.co.uk/projects/rock-hammer/)
+# Rock-Kit
+Rock-Kit is a port of Malarkey's Rock-Hammer project to the CodeKit .kit format.
+Hammer For Mac provides a much better build process then the current CodeKit, use of file paths is required. But it was a good experiment into the .kit format by CodeKit.
 
 [Rock Hammer](http://stuffandnonsense.co.uk/projects/rock-hammer/) is dedicated to [Alex Clarke](http://beardyscientist.com), a real life geologist.
 
